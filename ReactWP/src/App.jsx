@@ -1,11 +1,11 @@
 import { useState } from 'react'
+import Posts from './components/Pages/Posts/'
 import reactLogo from './assets/react.svg'
 import wpLogo from './assets/wpLogo.png'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-  const [name, setName] = useState(''); 
+  const [count, setCount] = useState(0);
 
   return (
     <>
@@ -14,8 +14,7 @@ function App() {
         <img src={wpLogo} className="logo react" alt="WP logo" />
       </div>
 
-      <h1>{name}</h1>
-      <input type="text" onChange={(e) => setName(e.target.value)} value={name}></input>
+      <Posts name="WP"/>
       
       <div className="card">
         <h4>Type in above box and Click on the button below</h4>
