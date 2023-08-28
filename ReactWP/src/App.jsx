@@ -1,15 +1,14 @@
 import Posts from './components/Pages/Posts/'
 import Footer from './components/Pages/Home/Footer'
-import reactLogo from './assets/react.svg'
-import wpLogo from './assets/wpLogo.png'
 import './App.css'
+import Header from './components/Pages/Home/Header'
 
 function App() {
   
   return (
     <>
-      <Posts name="WP"/>
-      <Footer />      
+      <Header />
+      <Posts name="WP"/>      
     </>
   )
 }
