@@ -8,10 +8,8 @@ function App() {
   
   return (
     <>
-      
       <Posts name="WP"/>
-      <Footer />
-            
+      <Footer />      
     </>
   )
 }
