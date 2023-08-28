@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import reactLogo from '/Users/syedwasiali/Developer/React/ReactWP/src/assets/react.svg'
-import wpLogo from '/Users/syedwasiali/Developer/React/ReactWP/src/assets/wpLogo.png'
+import reactLogo from '/workspaces/ReactWP/ReactWP/src/assets/react.svg'
+import wpLogo from '/workspaces/ReactWP/ReactWP/src/assets/wpLogo.png'
 
 
 const Posts = (propsVarName) => {
