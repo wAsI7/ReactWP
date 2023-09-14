@@ -24,8 +24,8 @@ class Worker extends Person {
     }
     goToWork(){
         this.xp = this.xp + 10;
-        console.log('Energy increasing currently at: ', this.energy);
         console.log('Name is:', this.name);
+        console.log('Energy increasing currently at: ', this.energy);
     }
 }
 
