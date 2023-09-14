@@ -6,10 +6,12 @@ class Person {
     }
     doSomethingFun(){
         this.energy = this.energy - 10;
+        console.log('Name is:', this.name);
         console.log('Energy decreasing currently at: ', this.energy);
     }
     sleep(){
         this.energy = this.energy + 10;
+        console.log('Name is:', this.name);
         console.log('Energy increasing currently at: ', this.energy);
     }
 }
@@ -23,18 +25,19 @@ class Worker extends Person {
     goToWork(){
         this.xp = this.xp + 10;
         console.log('Energy increasing currently at: ', this.energy);
+        console.log('Name is:', this.name);
     }
 }
 
 function intern(){
-    var internOne = new Worker('Bob', 21, 110, 0, 10);
+    var internOne = new Worker('Lokesh', 21, 110, 0, 10);
     internOne.goToWork();
     return internOne;
 }
 intern();
 
 function manager(){
-    var managerOne = new Worker('Alice', 30, 120, 100, 30);
+    var managerOne = new Worker('Wasi', 30, 120, 100, 30);
     managerOne.doSomethingFun();
     return managerOne;
 }
