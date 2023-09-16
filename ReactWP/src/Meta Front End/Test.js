@@ -6,7 +6,7 @@ function logDairy(){
     }
 }
 
-logDairy();
+//logDairy();
 
 const animal = {
 
@@ -21,15 +21,20 @@ bird.canFly = true;
 bird.hasFeathers = true;
 
 function birdCan(){
-    for(var prop of Object.keys(bird)){
+    for(let prop of Object.keys(bird)){
         console.log(`${prop}: ${bird[prop]}`);
     }
 }
 
-birdCan();
+//birdCan();
 
 function animalCan(){
-    for(var prop in Object.keys(bird)){
+    for(let prop of Object.keys(bird)){
         console.log(`${prop}: ${bird[prop]}`);
     }
+    for (let prop in animal) {
+        console.log(`${prop}: ${animal[prop]}`);
+    }
 }
+
+animalCan();
