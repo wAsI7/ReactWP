@@ -1,35 +1,19 @@
-const colors = ['Red', 'Blue', 'Yellow'];
+function randomAssign(){
+    var dynamicKey;
+    if(Math.random() > 0.5){
+        dynamicKey = 'speed';
+    }
+    else{
+        dynamicKey = 'color';
+    }
 
-for( var color of colors){
-    console.log('Color:', color);
+    var drone = {
+        speed: 100,
+        color: 'Red'
+        
+    }
+    console.log(drone[dynamicKey]);
+    console.log(Math.random());
 }
 
-const car = {
-    color: 'Red',
-    speed: 100
-}
-
-console.log('Object is:', Object.keys(car));
-
-const car2 = {
-    color: 'Blue',
-    speed: 200
-}
-
-console.log("Object Car Two Values are:", Object.values(car2));
-
-console.log("Object Car Two Entries are:", Object.entries(car2));
-
-
-var clothingItem = {
-    price: 500,
-    color: 'Red',
-    material: 'Cotton',
-    season: 'Spring'
-}
-
-for (var key of Object.keys(clothingItem)){
-
-    console.log(key, ':', clothingItem[key]);
-    
-}
+randomAssign();
