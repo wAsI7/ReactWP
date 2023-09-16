@@ -22,8 +22,8 @@ console.log("Object Car Two Entries are:", Object.entries(car2));
 
 
 var clothingItem = {
-    price;
-    color;
-    material;
-    season;
+    price: 500,
+    color: 'Red',
+    material: 'Cotton',
+    season: 'Spring'
 }
