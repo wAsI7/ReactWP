@@ -1,8 +1,8 @@
 var dairy = ['cheese', 'sour cream', 'milk', 'yogurt', 'ice cream', 'milkshake'];
 
 function logDairy(){
-    for(var prop of dairy){
-        console.log(prop);
+    for(var product of dairy){
+        console.log(product);
     }
 }
 
@@ -21,16 +21,16 @@ bird.canFly = true;
 bird.hasFeathers = true;
 
 function birdCan(){
-    for(let prop of Object.keys(bird)){
-        console.log(`${prop}: ${bird[prop]}`);
+    for(let key of Object.keys(bird)){
+        console.log(`${key}: ${bird[key]}`);
     }
 }
 
 birdCan();
 
 function animalCan(){
-    for(let prop of Object.keys(bird)){
-        console.log(`${prop}: ${bird[prop]}`);
+    for(let key of Object.keys(bird)){
+        console.log(`${key}: ${bird[key]}`);
     }
     for (let prop in animal) {
         console.log(`${prop}: ${animal[prop]}`);
