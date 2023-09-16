@@ -1,19 +1,35 @@
-function randomAssign(){
-    var dynamicKey;
-    if(Math.random() > 0.5){
-        dynamicKey = 'speed';
-    }
-    else{
-        dynamicKey = 'color';
-    }
+var dairy = ['cheese', 'sour cream', 'milk', 'yogurt', 'ice cream', 'milkshake'];
 
-    var drone = {
-        speed: 100,
-        color: 'Red'
-        
+function logDairy(){
+    for(var prop of dairy){
+        console.log(prop);
     }
-    console.log(drone[dynamicKey]);
-    console.log(`Random Number is Generated: ${Math.random()} is the number generated`);
 }
 
-randomAssign();
+logDairy();
+
+const animal = {
+
+    canJump: true
+    
+    };
+    
+const bird = Object.create(animal);
+
+bird.canFly = true;
+
+bird.hasFeathers = true;
+
+function birdCan(){
+    for(var prop of Object.keys(bird)){
+        console.log(`${prop}: ${bird[prop]}`);
+    }
+}
+
+birdCan();
+
+function animalCan(){
+    for(var prop in Object.keys(bird)){
+        console.log(`${prop}: ${bird[prop]}`);
+    }
+}
