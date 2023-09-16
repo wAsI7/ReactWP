@@ -27,3 +27,9 @@ var clothingItem = {
     material: 'Cotton',
     season: 'Spring'
 }
+
+for (var key of Object.keys(clothingItem)){
+
+    console.log(key, ':', clothingItem[key]);
+    
+}
