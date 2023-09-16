@@ -13,7 +13,7 @@ function randomAssign(){
         
     }
     console.log(drone[dynamicKey]);
-    console.log(Math.random());
+    console.log(`Random Number is Generated: ${Math.random()} is the number generated`);
 }
 
 randomAssign();
