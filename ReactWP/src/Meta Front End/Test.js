@@ -6,7 +6,7 @@ function logDairy(){
     }
 }
 
-//logDairy();
+logDairy();
 
 const animal = {
 
@@ -26,7 +26,7 @@ function birdCan(){
     }
 }
 
-//birdCan();
+birdCan();
 
 function animalCan(){
     for(let prop of Object.keys(bird)){
