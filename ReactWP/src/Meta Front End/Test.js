@@ -15,7 +15,7 @@ function logDairy(){
     }
 }
 
-logDairy();
+//logDairy();
 
 //Task2
 const animal = {
@@ -50,4 +50,4 @@ function animalCan(){
     }
 }
 
-animalCan();
+//animalCan();
