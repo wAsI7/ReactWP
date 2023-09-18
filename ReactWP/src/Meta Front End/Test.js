@@ -19,9 +19,7 @@ logDairy();
 
 //Task2
 const animal = {
-
-    canJump: true
-    
+    canJump: true    
     };
     
 const bird = Object.create(animal);
