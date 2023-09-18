@@ -1,7 +1,16 @@
-var dairy = ['cheese', 'sour cream', 'milk', 'yogurt', 'ice cream', 'milkshake'];
+//Task1
+var dairy = [
+    'cheese',
+    'sour cream',
+    'milk',
+    'yogurt',
+    'ice cream',
+    'milkshake'
+];
 
 function logDairy(){
     for(var product of dairy){
+        console.log("The list of Products are mentioned below");
         console.log(product);
     }
 }
