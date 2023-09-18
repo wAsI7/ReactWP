@@ -28,6 +28,10 @@ bird.canFly = true;
 
 bird.hasFeathers = true;
 
+bird.layEggs = true;
+
+bird.buildNest = false;
+
 function birdCan(){
     for(let key of Object.keys(bird)){
         console.log(`${key}: ${bird[key]}`);
