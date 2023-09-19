@@ -22,3 +22,10 @@ vegetables.forEach((veggie, index) => {
 
 
 /* filter method in Arrays */
+const numbers = [0, 10, 20, 30, 40, 50];
+
+const returnedNumbers = numbers.filter(num => {
+    return num > 20;
+});
+
+console.log(`The Numbers ${returnedNumbers} are greater than 30`);
