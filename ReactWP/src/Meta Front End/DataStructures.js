@@ -61,3 +61,24 @@ console.log(uniqueNumbers.has(5)); // Output: true
 uniqueNumbers.forEach(number => {
     console.log(number);
 });
+
+/*Data Structures - Maps */
+
+const bookPrices = new Map();
+
+bookPrices.set('Harry Potter', 20);
+bookPrices.set('Lord of the Rings', 25);
+
+// Accessing values
+console.log(bookPrices.get('Harry Potter')); // Output: 20
+
+// Modifying values
+bookPrices.set('Harry Potter', 22);
+
+// Checking if a key exists
+console.log(bookPrices.has('Lord of the Rings')); // Output: true
+
+// Iterating through a Map
+bookPrices.forEach((price, book) => {
+    console.log(`${book}: $${price}`);
+});
