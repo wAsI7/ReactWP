@@ -3,3 +3,5 @@ const fruits = [ 'Apple', 'Banana', 'Custard', 'Orange', 'Pineapple', 'Watermelo
 function appendIndex(fruit, index){
     console.log(`Fruit with Index ${index} is ${fruit}`);
 }
+
+fruits.forEach(appendIndex);
