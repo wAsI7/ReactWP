@@ -22,6 +22,7 @@ vegetables.forEach((veggie, index) => {
 });
 
 
+
 /*Data Structures - Objects */
 
 var car = {
@@ -47,6 +48,8 @@ for(var feature in car){
     console.log(`The ${feature} of the Car is: ${car[feature]}`);
 }
 
+
+
 /*Data Structures - Sets */
 const uniqueNumbers = new Set([1, 2, 3, 2, 4, 5, 4]);
 
@@ -61,6 +64,8 @@ console.log(uniqueNumbers.has(5)); // Output: true
 uniqueNumbers.forEach(number => {
     console.log(number);
 });
+
+
 
 /*Data Structures - Maps */
 
@@ -80,5 +85,5 @@ console.log(bookPrices.has('Lord of the Rings')); // Output: true
 
 // Iterating through a Map
 bookPrices.forEach((price, book) => {
-    console.log(`${book}: $${price}`);
+    console.log(`${book}: Rs ${price}/-`);
 });
