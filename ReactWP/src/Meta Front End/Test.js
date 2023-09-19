@@ -1,4 +1,3 @@
-//Task1
 var dairy = [
     'cheese',
     'sour cream',
@@ -15,9 +14,8 @@ function logDairy(){
     }
 }
 
-//logDairy();
+logDairy();
 
-//Task2
 const animal = {
     canJump: true    
     };
@@ -40,7 +38,6 @@ function birdCan(){
 
 birdCan();
 
-//Task3
 function animalCan(){
     for(let key of Object.keys(bird)){
         console.log(`${key}: ${bird[key]}`);
@@ -50,4 +47,4 @@ function animalCan(){
     }
 }
 
-//animalCan();
+animalCan();
