@@ -1,28 +1,5 @@
-const wadrobe = ['TShirt', 'Jeans', 'Pants', 'Shirts', 200, 300, 120, 430];
-
-//Spread Operator
-const ready = (...wadrobe) => {
-    for(var value of wadrobe){
-        console.log(`${value} is of type ${typeof(value)}`);        
-    }
-    
-}
-
-ready(...wadrobe);
-
-//Rest Operator
-var itemsPrice = [300, 240, 80, 90];
-
-const addTax = (taxRate, ...itemsBought) => {
-    return itemsBought.map(item => item + (item * taxRate) / 100);
-}
-
-const priceWithTax = addTax(2.5, ...itemsPrice);
-
-console.log(priceWithTax);
-
-
 //ASSIGNMENT
+// Add new members to arrays without using the push() method,
 
 var fruits = ['apple', 'banana', 'berries', 'kiwi'];
 
@@ -30,8 +7,25 @@ var veggies = ['tomato', 'potato', 'onion'];
 
 var cart = [...fruits, ...veggies];
 
-console.log(cart);
 
 for (var i=0; i < cart.length; i++){
     console.log(cart[i]);
 }
+
+//Convert a string to an array
+
+var name = 'Syed Wasi Ali';
+
+var nameArr = [];
+
+for (var i=0; i < name.length; i++){
+    nameArr[i] = name[i];
+    console.log(nameArr[i]);
+}
+
+//Simplified version of the above code is 
+const greeting = "Hello";
+const arrayOfChars = [...greeting];
+console.log(arrayOfChars); //  ['H', 'e', 'l', 'l', 'o']
+
+//Copy either an object or an array into a separate one
