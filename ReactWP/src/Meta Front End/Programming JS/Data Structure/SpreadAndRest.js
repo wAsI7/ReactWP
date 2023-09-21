@@ -8,20 +8,15 @@ const ready = (...wadrobe) => {
     
 }
 
-//ready(...wadrobe);
+ready(...wadrobe);
 
 //Rest Operator
 var itemsPrice = [300, 240, 80, 90];
 
 const addTax = (taxRate, ...itemsBought) => {
-    return itemsBought.map(item => (item * taxRate)/100);    
+    return itemsBought.map(item => item + (item * taxRate) / 100);
 }
 
-const taxOfEach = addTax(2.5, ...itemsPrice);
+const priceWithTax = addTax(2.5, ...itemsPrice);
 
-
-for(var val of itemsPrice){
-    itemsPrice[val] = itemsPrice[val] + taxOfEach[val];
-}
-
-console.log(itemsPrice);
+console.log(priceWithTax);
