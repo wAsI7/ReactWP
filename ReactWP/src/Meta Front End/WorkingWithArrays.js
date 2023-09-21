@@ -30,7 +30,11 @@ const returnedNumbers = numbers.filter(num => {
 
 console.log(`The Numbers ${returnedNumbers} are greater than 30`);
 
-/* filter method in Arrays */
-[0,10,20,30,40,50].map( function(num) {
-    return num / 10
+/* Map method in Arrays */
+
+
+const returnValuesMap = [0,10,20,30,40,50].map( function(num) {
+    return num / 10;
 })
+
+console.log(`The returned values of Map method is ${returnValuesMap}`);
