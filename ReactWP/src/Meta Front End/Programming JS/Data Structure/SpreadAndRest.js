@@ -20,3 +20,18 @@ const addTax = (taxRate, ...itemsBought) => {
 const priceWithTax = addTax(2.5, ...itemsPrice);
 
 console.log(priceWithTax);
+
+
+//ASSIGNMENT
+
+var fruits = ['apple', 'banana', 'berries', 'kiwi'];
+
+var veggies = ['tomato', 'potato', 'onion'];
+
+var cart = [...fruits, ...veggies];
+
+//console.log(cart);
+
+for (var i=0; i < cart.length; i++){
+    console.log(cart[i]);
+}
