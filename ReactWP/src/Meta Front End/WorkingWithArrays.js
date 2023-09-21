@@ -29,3 +29,5 @@ const returnedNumbers = numbers.filter(num => {
 });
 
 console.log(`The Numbers ${returnedNumbers} are greater than 30`);
+
+/* filter method in Arrays */
