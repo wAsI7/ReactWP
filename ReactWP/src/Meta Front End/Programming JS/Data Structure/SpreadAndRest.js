@@ -11,15 +11,17 @@ const ready = (...wadrobe) => {
 //ready(...wadrobe);
 
 //Rest Operator
+var itemsPrice = [300, 240, 80, 90];
+
 const addTax = (taxRate, ...itemsBought) => {
     return itemsBought.map(item => (item * taxRate)/100);    
 }
 
-var taxAndPrice = [2.5, 300, 240, 80, 90];
+const taxOfEach = addTax(2.5, ...itemsPrice);
 
-const taxOfEach = addTax(...taxAndPrice);
 
-var priceWithTax = [];
-for(var val of )
+for(var val of itemsPrice){
+    itemsPrice[val] = itemsPrice[val] + taxOfEach[val];
+}
 
-console.log(shoppingCart);
+console.log(itemsPrice);
