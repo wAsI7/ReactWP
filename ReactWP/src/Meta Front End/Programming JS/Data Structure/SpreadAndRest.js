@@ -29,3 +29,20 @@ const arrayOfChars = [...greeting];
 console.log(arrayOfChars); //  ['H', 'e', 'l', 'l', 'o']
 
 //Copy either an object or an array into a separate one
+const car1 = {
+    speed: 200,
+    color: 'Blue'
+}
+
+const car2 = {...car1};
+
+car2.color = 'Red';
+
+console.log(car2.color);
+
+const bike = [200, 'Yellow', 50];
+const bike2 = [...bike];
+
+bike2.push('TVS');
+
+console.log(bike2);
