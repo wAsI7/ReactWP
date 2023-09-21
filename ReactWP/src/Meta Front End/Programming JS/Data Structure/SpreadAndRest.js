@@ -30,7 +30,7 @@ var veggies = ['tomato', 'potato', 'onion'];
 
 var cart = [...fruits, ...veggies];
 
-//console.log(cart);
+console.log(cart);
 
 for (var i=0; i < cart.length; i++){
     console.log(cart[i]);
