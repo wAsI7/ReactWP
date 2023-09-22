@@ -7,7 +7,7 @@ export const formalGreeting = (person) => {
 }
 
 const greeting = () => {
-    console.log('HELLO');
+    console.log('Asalamualikum');
 }
 
 export default greeting;
